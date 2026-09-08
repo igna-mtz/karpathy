@@ -1,0 +1,3 @@
+exercises:
+
+- deduce bessel correction for X ~ mu, sigma**2, reason degree of freedom
