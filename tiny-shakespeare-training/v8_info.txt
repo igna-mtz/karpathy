@@ -1,0 +1,157 @@
+GPTLanguageModel(
+  (token_embedding_table): Embedding(65, 384)
+  (position_embedding_table): Embedding(256, 384)
+  (blocks): Sequential(
+    (0): Block(
+      (sa): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-5): 6 x Head(
+            (key): Linear(in_features=384, out_features=64, bias=False)
+            (query): Linear(in_features=384, out_features=64, bias=False)
+            (value): Linear(in_features=384, out_features=64, bias=False)
+            (dropout): Dropout(p=0.2, inplace=False)
+          )
+        )
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+      )
+      (ffw): FeedForward(
+        (net): Sequential(
+          (0): Linear(in_features=384, out_features=1536, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=1536, out_features=384, bias=True)
+          (3): Dropout(p=0.2, inplace=False)
+        )
+      )
+      (ln1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (ln2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+    )
+    (1): Block(
+      (sa): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-5): 6 x Head(
+            (key): Linear(in_features=384, out_features=64, bias=False)
+            (query): Linear(in_features=384, out_features=64, bias=False)
+            (value): Linear(in_features=384, out_features=64, bias=False)
+            (dropout): Dropout(p=0.2, inplace=False)
+          )
+        )
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+      )
+      (ffw): FeedForward(
+        (net): Sequential(
+          (0): Linear(in_features=384, out_features=1536, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=1536, out_features=384, bias=True)
+          (3): Dropout(p=0.2, inplace=False)
+        )
+      )
+      (ln1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (ln2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+    )
+    (2): Block(
+      (sa): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-5): 6 x Head(
+            (key): Linear(in_features=384, out_features=64, bias=False)
+            (query): Linear(in_features=384, out_features=64, bias=False)
+            (value): Linear(in_features=384, out_features=64, bias=False)
+            (dropout): Dropout(p=0.2, inplace=False)
+          )
+        )
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+      )
+      (ffw): FeedForward(
+        (net): Sequential(
+          (0): Linear(in_features=384, out_features=1536, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=1536, out_features=384, bias=True)
+          (3): Dropout(p=0.2, inplace=False)
+        )
+      )
+      (ln1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (ln2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+    )
+    (3): Block(
+      (sa): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-5): 6 x Head(
+            (key): Linear(in_features=384, out_features=64, bias=False)
+            (query): Linear(in_features=384, out_features=64, bias=False)
+            (value): Linear(in_features=384, out_features=64, bias=False)
+            (dropout): Dropout(p=0.2, inplace=False)
+          )
+        )
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+      )
+      (ffw): FeedForward(
+        (net): Sequential(
+          (0): Linear(in_features=384, out_features=1536, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=1536, out_features=384, bias=True)
+          (3): Dropout(p=0.2, inplace=False)
+        )
+      )
+      (ln1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (ln2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+    )
+    (4): Block(
+      (sa): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-5): 6 x Head(
+            (key): Linear(in_features=384, out_features=64, bias=False)
+            (query): Linear(in_features=384, out_features=64, bias=False)
+            (value): Linear(in_features=384, out_features=64, bias=False)
+            (dropout): Dropout(p=0.2, inplace=False)
+          )
+        )
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+      )
+      (ffw): FeedForward(
+        (net): Sequential(
+          (0): Linear(in_features=384, out_features=1536, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=1536, out_features=384, bias=True)
+          (3): Dropout(p=0.2, inplace=False)
+        )
+      )
+      (ln1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (ln2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+    )
+    (5): Block(
+      (sa): MultiHeadAttention(
+        (heads): ModuleList(
+          (0-5): 6 x Head(
+            (key): Linear(in_features=384, out_features=64, bias=False)
+            (query): Linear(in_features=384, out_features=64, bias=False)
+            (value): Linear(in_features=384, out_features=64, bias=False)
+            (dropout): Dropout(p=0.2, inplace=False)
+          )
+        )
+        (proj): Linear(in_features=384, out_features=384, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+      )
+      (ffw): FeedForward(
+        (net): Sequential(
+          (0): Linear(in_features=384, out_features=1536, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=1536, out_features=384, bias=True)
+          (3): Dropout(p=0.2, inplace=False)
+        )
+      )
+      (ln1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (ln2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (ln_f): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+  (lm_head): Linear(in_features=384, out_features=65, bias=True)
+)
+
+Final train loss: 1.0449
+Final val loss:   1.4902
+Training steps:   5000
+Learning rate:    0.0003
